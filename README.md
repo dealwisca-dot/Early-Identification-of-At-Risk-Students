@@ -1,4 +1,4 @@
-<img src="banner.jpg" alt="Project Banner" width="800">
+<img src="banner.jpg" alt="Project Banner" width="500">
 
 # Early Identification of At-Risk Students Through Final Mathematics Grade Prediction
 
@@ -26,40 +26,40 @@ The project follows a structured machine learning lifecycle, divided among four 
 
 ```mermaid
 flowchart TD
-    subgraph Phase 1: Business & EDA
+    subgraph P1 [Phase 1: Business & EDA]
         A[Identify Educational Business Problem] --> B[Select Business Lens]
         B --> C[Understand Dataset & Variables]
         C --> D[Exploratory Data Analysis]
         D --> E[Identify Data Quality Issues]
     end
 
-    subgraph Phase 2: Data Preparation
+    subgraph P2 [Phase 2: Data Preparation]
         F[Define & Justify Risk Threshold] --> G[Create Risk Status Target]
         G --> H[Split Data into Train/Test]
         H --> I[Data Preprocessing]
         I --> J[Feature Engineering & Selection]
     end
 
-    subgraph Phase 3: Machine Learning Development
+    subgraph P3 [Phase 3: Machine Learning Development]
         K[Train Classification Models] --> L[Perform Stratified Cross-Validation]
         L --> M[Compare Models]
         M --> N[Select Final Model]
     end
 
-    subgraph Phase 4: Evaluation & Interpretation
+    subgraph P4 [Phase 4: Evaluation & Interpretation]
         O[Evaluate Final Model on Test Set] --> P[Generate At Risk Predictions]
         P --> Q[Interpret Results]
         Q --> R[Business Recommendations & Limitations]
     end
 
-    Phase 1 --> Phase 2
-    Phase 2 --> Phase 3
-    Phase 3 --> Phase 4
+    E --> F
+    J --> K
+    N --> O
 
-    style Phase 1 fill:#1a237e,stroke:#fff,stroke-width:2px,color:#fff
-    style Phase 2 fill:#004d40,stroke:#fff,stroke-width:2px,color:#fff
-    style Phase 3 fill:#4a148c,stroke:#fff,stroke-width:2px,color:#fff
-    style Phase 4 fill:#bf360c,stroke:#fff,stroke-width:2px,color:#fff
+    style P1 fill:#1a237e,stroke:#fff,stroke-width:2px,color:#fff
+    style P2 fill:#004d40,stroke:#fff,stroke-width:2px,color:#fff
+    style P3 fill:#4a148c,stroke:#fff,stroke-width:2px,color:#fff
+    style P4 fill:#bf360c,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 ## 👥 Core Responsibilities
