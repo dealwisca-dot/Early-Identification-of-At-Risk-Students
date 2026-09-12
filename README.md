@@ -1,4 +1,4 @@
-<img src="banner.jpg" alt="Project Banner" width="500">
+<img src="banner.jpg" alt="Project Banner" width="800" height="250">
 
 # Early Identification of At-Risk Students Through Final Mathematics Grade Prediction
 
